@@ -37,16 +37,16 @@ public class InputManager : MonoBehaviour
     }
 
     private void HandleCameraInput()
-    {        
-            // Get mouse input for the camera
-            cameraInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+    {
+        // Get mouse input for the camera
+        cameraInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
-            // Get scroll input for camera zoom
-            scrollInput = Input.GetAxis("Mouse ScrollWheel");
+        // Get scroll input for camera zoom
+        scrollInput = Input.GetAxis("Mouse ScrollWheel");
 
-            // Send inputs to CameraManager
-            cameraManager.zoomInput = scrollInput;
-            cameraManager.cameraInput = cameraInput;        
+        // Send inputs to CameraManager
+        cameraManager.zoomInput = scrollInput;
+        cameraManager.cameraInput = cameraInput;
     }
 
     private void HandleMovementInput()

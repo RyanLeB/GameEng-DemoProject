@@ -10,6 +10,7 @@ public class CameraManager : MonoBehaviour
 {
     [Header("Reference to the player's camera")]
     [SerializeField] public Camera playerCamera;
+    [SerializeField] public AudioListener playerListener;
 
     [Header("The target the camera will follow")]
     [SerializeField] private Transform followTarget;
@@ -53,13 +54,13 @@ public class CameraManager : MonoBehaviour
     {
         if (isCameraMoveEnabled)
         { HandleCamera(); }
-        
+
     }
 
 
     private void HandleCamera()
     {
-        
+
 
         // Exit if there is no target
         if (followTarget == null) return; //set a debug error
