@@ -10,6 +10,7 @@ public class PlayerLocomotionHandler : MonoBehaviour
     [SerializeField] private InputManager inputManager;
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private CharacterController characterController;
+    public static float movementSpeed;
 
     [Header("Debugging Values")]
     [SerializeField] public bool isSprinting;
@@ -122,6 +123,7 @@ public class PlayerLocomotionHandler : MonoBehaviour
     {
         // Calculate the player's velocity magnitude, including both movement and vertical velocity (gravity/jumping)
         playerVelocity = characterController.velocity.magnitude;
+        movementSpeed = playerVelocity;
     }
 
 
