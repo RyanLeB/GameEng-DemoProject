@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 // Sam Robichaud 
 // NSCC Truro 2024
@@ -20,6 +21,9 @@ public class InputManager : MonoBehaviour
     public Vector2 movementInput;
     public float moveAmount;
 
+    private PlayerInput controls;
+
+
     [Header("Camera Inputs")]
     public float scrollInput; // Scroll input for camera zoom
     public Vector2 cameraInput; // Mouse input for the camera
@@ -38,6 +42,12 @@ public class InputManager : MonoBehaviour
 
     private void HandleCameraInput()
     {
+
+
+        cameraManager.zoomInput = scrollInput;
+        cameraManager.cameraInput = cameraInput;
+
+
         // Get mouse input for the camera
         cameraInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 

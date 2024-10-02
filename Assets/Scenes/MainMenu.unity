@@ -490,6 +490,43 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1 &421623961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7034935583075056663, guid: e778663d324e19a48ab9d91fcd9af8f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2384008851326326069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &421623966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421623961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 73d0b284fc35b0a41b1ed767795daa48,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 2107614843}
 --- !u!1 &513221321
 GameObject:
   m_ObjectHideFlags: 0
@@ -2002,6 +2039,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!20 &2107614843 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7852501862026054370, guid: e778663d324e19a48ab9d91fcd9af8f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2384008851326326069}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2145364146 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5229660304388144660, guid: e778663d324e19a48ab9d91fcd9af8f9,
@@ -2165,7 +2208,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 68136885}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7034935583075056663, guid: e778663d324e19a48ab9d91fcd9af8f9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 421623966}
   m_SourcePrefab: {fileID: 100100000, guid: e778663d324e19a48ab9d91fcd9af8f9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
