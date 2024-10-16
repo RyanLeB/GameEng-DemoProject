@@ -45,6 +45,9 @@ public class YourClass : MonoBehaviour
         }
     }
 
+
+    // Resets colors of highlighted raycast object (cube)
+
     private void ResetColors(RaycastHit[] hits)
     {
         // Create a HashSet of current hit colliders
