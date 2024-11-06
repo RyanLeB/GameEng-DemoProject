@@ -546,6 +546,24 @@ MonoBehaviour:
   cubeFilter:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &421623972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421623961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a33a8f6759c5274cbaf114c2229eea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraManager: {fileID: 1289291690}
+  playerCam: {fileID: 2107614843}
+  uIManager: {fileID: 1483481017}
+  maxRayDistance: 100
+  target: {fileID: 0}
+  _interactionPossible: 0
 --- !u!1 &513221321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,6 +1825,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2384008851326326069}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1289291690 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 725711720319384260, guid: e778663d324e19a48ab9d91fcd9af8f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2384008851326326069}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85490debf802314b9604b0f3f34c174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1423335904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1941,6 +1971,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423335904}
   m_CullTransparentMesh: 1
+--- !u!114 &1483481017 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 393610008284620649, guid: e778663d324e19a48ab9d91fcd9af8f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2384008851326326069}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74205c44aa72a3e48b7a0ae77d99b492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1583253799
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,6 +2182,18 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &1835506057 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7080073777982698874, guid: e778663d324e19a48ab9d91fcd9af8f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2384008851326326069}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1944742420
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,6 +2275,11 @@ PrefabInstance:
       propertyPath: LoadingScreen
       value: 
       objectReference: {fileID: 68136884}
+    - target: {fileID: 393610008284620649, guid: e778663d324e19a48ab9d91fcd9af8f9,
+        type: 3}
+      propertyPath: GameplayMessage
+      value: 
+      objectReference: {fileID: 1835506057}
     - target: {fileID: 393610008284620649, guid: e778663d324e19a48ab9d91fcd9af8f9,
         type: 3}
       propertyPath: loadingScreenCanvasGroup
@@ -2332,6 +2391,11 @@ PrefabInstance:
       propertyPath: controls.m_Name
       value: Controls
       objectReference: {fileID: 0}
+    - target: {fileID: 5697578372536420906, guid: e778663d324e19a48ab9d91fcd9af8f9,
+        type: 3}
+      propertyPath: interactionManager
+      value: 
+      objectReference: {fileID: 421623972}
     - target: {fileID: 5697578372536420906, guid: e778663d324e19a48ab9d91fcd9af8f9,
         type: 3}
       propertyPath: playerControl.m_Name
@@ -2504,6 +2568,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 421623967}
+    - targetCorrespondingSourceObject: {fileID: 7034935583075056663, guid: e778663d324e19a48ab9d91fcd9af8f9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 421623972}
   m_SourcePrefab: {fileID: 100100000, guid: e778663d324e19a48ab9d91fcd9af8f9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

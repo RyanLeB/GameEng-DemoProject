@@ -12,7 +12,7 @@ public class InputManager : MonoBehaviour
     // Script References
     [SerializeField] private PlayerLocomotionHandler playerLocomotionHandler;
     [SerializeField] private CameraManager cameraManager; // Reference to CameraManager
-
+    public InteractionManager interactionManager;
 
     [Header("Movement Inputs")]
     public float verticalInput;
@@ -28,6 +28,9 @@ public class InputManager : MonoBehaviour
     private InputAction look;
     private InputAction sprint;
     private InputAction jump;
+    private InputAction playerFire;
+
+
 
 
     [Header("Camera Inputs")]
@@ -41,6 +44,9 @@ public class InputManager : MonoBehaviour
 
     private void OnEnable()
     {
+        
+        
+        
         move = playerControls.Player.Move;
         move.Enable();
 
@@ -52,6 +58,9 @@ public class InputManager : MonoBehaviour
 
         jump = playerControls.Player.Jump;
         jump.Enable();
+
+        playerFire = playerControls.Player.Fire;
+        playerFire.Enable();
 
 
     }
@@ -77,6 +86,15 @@ public class InputManager : MonoBehaviour
         HandleJumpInput();
         HandleCameraInput();
         HandlePauseKeyInput();
+        HandleInteractionInput();
+    }
+
+    private void HandleInteractionInput()
+    {
+        if (playerFire.IsPressed() && interactionManager._interactionPossible)
+        {
+            interactionManager.Interact();
+        }
     }
 
     private void HandleCameraInput()
