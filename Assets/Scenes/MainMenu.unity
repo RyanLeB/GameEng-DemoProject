@@ -564,6 +564,8 @@ MonoBehaviour:
   maxRayDistance: 100
   target: {fileID: 0}
   _interactionPossible: 0
+  coinPickup: {fileID: 0}
+  healthPickup: {fileID: 0}
 --- !u!1 &513221321
 GameObject:
   m_ObjectHideFlags: 0
@@ -2326,6 +2328,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: TestLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 515732063566655833, guid: e778663d324e19a48ab9d91fcd9af8f9,
+        type: 3}
+      propertyPath: playerStats
+      value: 
+      objectReference: {fileID: 11400000, guid: 24e06cf1cd33a834f806487cbc8b4b35,
+        type: 2}
     - target: {fileID: 1450816010896785426, guid: e778663d324e19a48ab9d91fcd9af8f9,
         type: 3}
       propertyPath: m_Name

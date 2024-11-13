@@ -8,6 +8,8 @@ public class Interactable : MonoBehaviour
 
     public InteractionType type;
 
+    
+
     public void Activate()
     {
         Debug.Log(this.name + " was activated");

@@ -21,6 +21,11 @@ public class InteractionManager : MonoBehaviour
     public bool _interactionPossible;
 
 
+    
+
+    
+
+
     void Awake()
     {
         uIManager = FindObjectOfType<UIManager>();
@@ -80,6 +85,11 @@ public class InteractionManager : MonoBehaviour
             case Interactable.InteractionType.Pickup:
                 target.SetActive(false);
                 Debug.Log("Picked up item!");
+
+                
+               
+                
+
 
                 break;
         }
