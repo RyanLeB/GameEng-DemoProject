@@ -71,7 +71,7 @@ public class InteractionManager : MonoBehaviour
 
     public void Interact()
     {
-
+        string itemName = targetInteractable.objectName.itemName;
 
         switch (targetInteractable.type)
         {
@@ -84,14 +84,14 @@ public class InteractionManager : MonoBehaviour
                 break;
             case Interactable.InteractionType.Pickup:
                 target.SetActive(false);
-                Debug.Log("Picked up item!");
+                Debug.Log("Picked up: " + itemName);
 
                 
+                break;
                
                 
 
 
-                break;
         }
     }
 

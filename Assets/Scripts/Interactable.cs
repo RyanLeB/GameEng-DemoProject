@@ -8,7 +8,7 @@ public class Interactable : MonoBehaviour
 
     public InteractionType type;
 
-    
+    public PickupObject objectName;
 
     public void Activate()
     {
